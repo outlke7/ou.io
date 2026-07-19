@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>   بــدر الشافعي | مطوّر واجهات أمامية &amp; مصمم UI/UX</title>
+<meta name="description" content="   بــدر الشافعي - مطوّر واجهات أمامية ومصمم تجربة مستخدم، متخصص في بناء المواقع التعريفية والمتاجر الإلكترونية وصفحات الهبوط بجودة احترافية.">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<!-- شاشة التحميل -->
+<div id="loading-screen">
+  <div class="loader-mark">
+    <span>&lt;</span>
+    <span class="loader-slash">Y</span>
+    <span>/&gt;</span>
+  </div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- خلفية متحركة عامة -->
+<div class="bg-aurora" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+  <div class="grid-overlay"></div>
+</div>
+
+<!-- الهيدر -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo">بــدر الشافعي<span>.</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="active">الرئيسية</a>
+      <a href="#about">عني</a>
+      <a href="#skills">المهارات</a>
+      <a href="#services">الخدمات</a>
+      <a href="#portfolio">الأعمال</a>
+      <a href="#pricing">الباقات</a>
+      <a href="#testimonials">الآراء</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="تبديل الوضع الليلي">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-sm">لنبدأ مشروعك</a>
+      <button id="navToggle" class="nav-toggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot-live"></span> متاح لمشاريع جديدة</p>
+        <h1>
+          أصمّم وأبرمج
+          <span class="type-wrap">واجهات<span class="type-cursor" id="typedText"></span></span>
+          تُترجم أفكارك إلى تجربة رقمية حقيقية
+        </h1>
+        <p class="hero-desc">
+          مطوّر واجهات أمامية ومصمم UI/UX، أبني مواقع تعريفية ومتاجر إلكترونية وصفحات هبوط سريعة، أنيقة، ومتوافقة مع محركات البحث — من الفكرة إلى الإطلاق.
+        </p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn btn-primary">شاهد أعمالي</a>
+          <a href="assets/cv.pdf" class="btn btn-outline" download>تحميل السيرة الذاتية</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="120">0</span>
+            <span class="stat-label">مشروع منجز</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="65">0</span>
+            <span class="stat-label">عميل سعيد</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">سنوات خبرة</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="980">0</span>
+            <span class="stat-label">☕ فنجان قهوة</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <img src="assets/images/profile.webp" alt="صورة    بــدر الشافعي" class="hero-photo" loading="eager">
+          <span class="badge-float badge-1">Frontend</span>
+          <span class="badge-float badge-2">UI/UX</span>
+          <span class="badge-float badge-3">SEO Ready</span>
+        </div>
+        <div class="glass-terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">portfolio.js</span>
+          </div>
+          <pre class="terminal-code"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"   بــدر الشافعي"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
+  <span class="c-prop">passion</span>: <span class="c-str">"UI/UX"</span>,
+  <span class="c-prop">available</span>: <span class="c-key">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="مرر للأسفل"><span></span></a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-frame">
+          <img src="assets/images/profile.webp" alt="   بــدر الشافعي يعمل على مشروع تصميم" loading="lazy">
+        </div>
+        <div class="about-exp-card">
+          <span class="exp-num">+6</span>
+          <span class="exp-label">سنوات في تطوير الواجهات</span>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="section-tag">نبذة عني</p>
+        <h2 class="section-title">أبني مواقع تحكي قصة علامتك التجارية</h2>
+        <p class="about-text">
+          أنا بدر، مطوّر واجهات أمامية ومصمم تجربة مستخدم من السعودية. أعمل مع الشركات الناشئة وأصحاب الأعمال والوكالات لتحويل الأفكار إلى مواقع سريعة وأنيقة تعكس هوية العلامة وتخدم أهداف العمل، بعيدًا عن القوالب الجاهزة.
+        </p>
+        <p class="about-text">
+          أومن أن الموقع الناجح هو مزيج من تصميم بصري مدروس، وكود نظيف خفيف، وتجربة استخدام سلسة على كل الشاشات — وهذا ما أسعى إليه في كل مشروع.
+        </p>
+
+        <ul class="about-points">
+          <li><span class="point-icon">✓</span> تصميم مخصص 100% بدون قوالب جاهزة</li>
+          <li><span class="point-icon">✓</span> كود نظيف قابل للتوسعة والتسليم الكامل</li>
+          <li><span class="point-icon">✓</span> تركيز على الأداء وسرعة التحميل</li>
+          <li><span class="point-icon">✓</span> دعم فني بعد التسليم</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary">تحدث معي عن مشروعك</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag center">المهارات</p>
+        <h2 class="section-title center">الأدوات التي أبني بها</h2>
+        <p class="section-sub center">مزيج من التصميم البصري والبرمجة التقنية لإخراج منتج نهائي متكامل</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-ring" data-percent="95">
+            <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+            <span class="ring-label">95%</span>
+          </div>
+          <h3>HTML5 &amp; CSS3</h3>
+          <p>هيكلة دلالية وتنسيقات متقدمة متجاوبة مع جميع الأجهزة</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-ring" data-percent="90">
+            <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+            <span class="ring-label">90%</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>تفاعلية وحركات وتجارب مستخدم ديناميكية بأداء عالٍ</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-ring" data-percent="88">
+            <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+            <span class="ring-label">88%</span>
+          </div>
+          <h3>UI / UX Design</h3>
+          <p>تصميم واجهات في Figma قبل التحويل إلى كود حقيقي</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-ring" data-percent="85">
+            <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+            <span class="ring-label">85%</span>
+          </div>
+          <h3>الأداء و SEO</h3>
+          <p>تحسين السرعة والظهور في نتائج البحث لكل مشروع</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-ring" data-percent="80">
+            <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+            <span class="ring-label">80%</span>
+          </div>
+          <h3>WordPress</h3>
+          <p>بناء وتخصيص مواقع ووردبريس وربطها بالمتاجر</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-ring" data-percent="83">
+            <svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+            <span class="ring-label">83%</span>
+          </div>
+          <h3>التجاوب Responsive</h3>
+          <p>تجربة متطابقة الجودة على الجوال واللوحي وسطح المكتب</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag center">الخدمات</p>
+        <h2 class="section-title center">كيف يمكنني مساعدتك</h2>
+        <p class="section-sub center">خدمات متكاملة من التصميم إلى الإطلاق</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🖥️</div>
+          <h3>تصميم مواقع</h3>
+          <p>مواقع تعريفية احترافية تعكس هوية علامتك التجارية وتبني ثقة زوارك.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🛒</div>
+          <h3>متاجر إلكترونية</h3>
+          <p>متاجر سريعة وسهلة الاستخدام مصممة لزيادة معدل التحويل والمبيعات.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🚀</div>
+          <h3>Landing Pages</h3>
+          <p>صفحات هبوط مركزة على هدف واحد لرفع نسبة التسجيل أو البيع.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🎨</div>
+          <h3>UI / UX</h3>
+          <p>تصميم تجربة استخدام مدروسة تجعل التنقل في موقعك بديهيًا وممتعًا.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">⚙️</div>
+          <h3>تطوير Frontend</h3>
+          <p>برمجة واجهات نظيفة وسريعة بأحدث تقنيات HTML وCSS وJavaScript.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📈</div>
+          <h3>تحسين SEO والأداء</h3>
+          <p>ضبط السرعة والبيانات الوصفية لضمان ظهور أفضل في نتائج البحث.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag center">أعمالي</p>
+        <h2 class="section-title center">مشاريع مختارة</h2>
+        <p class="section-sub center">نماذج من مشاريع حقيقية صُممت وبُرمجت من الصفر</p>
+      </div>
+
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="web">مواقع</button>
+        <button class="filter-btn" data-filter="store">متاجر</button>
+        <button class="filter-btn" data-filter="landing">Landing</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="project-card reveal" data-cat="web">
+          <div class="project-media">
+            <img src="assets/images/project1.webp" alt="موقع شركة عقارية" loading="lazy">
+            <div class="project-overlay">
+              <a href="#" class="proj-link" aria-label="عرض مباشر">🔗 عرض مباشر</a>
+              <a href="#" class="proj-link" aria-label="GitHub">💻 GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>منصّة عقارات</h3>
+            <p>موقع تعريفي لشركة عقارية مع بحث متقدم عن الوحدات</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="store">
+          <div class="project-media">
+            <img src="assets/images/project2.webp" alt="متجر إلكتروني للأزياء" loading="lazy">
+            <div class="project-overlay">
+              <a href="#" class="proj-link">🔗 عرض مباشر</a>
+              <a href="#" class="proj-link">💻 GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>متجر أزياء</h3>
+            <p>متجر إلكتروني كامل مع سلة شراء وبوابة دفع</p>
+            <div class="tags"><span>WooCommerce</span><span>CSS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="landing">
+          <div class="project-media">
+            <img src="assets/images/project3.webp" alt="صفحة هبوط لتطبيق" loading="lazy">
+            <div class="project-overlay">
+              <a href="#" class="proj-link">🔗 عرض مباشر</a>
+              <a href="#" class="proj-link">💻 GitHub</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Landing Page لتطبيق</h3>
+            <p>صفحة هبوط لإطلاق تطبيق جوال بمعدل تحويل مرتفع</p>
+            <div class="tags"><span>HTML</span><span>Animation</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag center">الباقات</p>
+        <h2 class="section-title center">اختر ما يناسب مشروعك</h2>
+        <p class="section-sub center">أسعار واضحة بدون مفاجآت، مع إمكانية التخصيص الكامل</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <h3>Starter</h3>
+          <p class="price-desc">مناسبة للأعمال الصغيرة والصفحات المفردة</p>
+          <div class="price-amount"><span class="currency">$</span>249</div>
+          <ul class="price-features">
+            <li>صفحة واحدة (Landing Page)</li>
+            <li>تصميم متجاوب 100%</li>
+            <li>نموذج تواصل</li>
+            <li>تسليم خلال 5 أيام</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">ابدأ الآن</a>
+        </div>
+
+        <div class="price-card featured reveal">
+          <span class="price-badge">الأكثر طلبًا</span>
+          <h3>Business</h3>
+          <p class="price-desc">موقع تعريفي متكامل لعملك</p>
+          <div class="price-amount"><span class="currency">$</span>599</div>
+          <ul class="price-features">
+            <li>حتى 6 صفحات</li>
+            <li>تصميم مخصص كامل</li>
+            <li>تحسين SEO أساسي</li>
+            <li>ربط بالسوشيال ميديا</li>
+            <li>تسليم خلال 10 أيام</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">ابدأ الآن</a>
+        </div>
+
+        <div class="price-card reveal">
+          <h3>Premium</h3>
+          <p class="price-desc">للمتاجر والمشاريع الكبيرة</p>
+          <div class="price-amount"><span class="currency">$</span>1299</div>
+          <ul class="price-features">
+            <li>متجر إلكتروني كامل</li>
+            <li>لوحة تحكم للمنتجات</li>
+            <li>تحسين SEO متقدم</li>
+            <li>دعم فني لمدة شهر</li>
+            <li>تسليم خلال 21 يوم</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">ابدأ الآن</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag center">آراء العملاء</p>
+        <h2 class="section-title center">ماذا قالوا عن العمل معي</h2>
+      </div>
+
+      <div class="testimonials-track reveal">
+        <div class="testimonial-card">
+          <p class="t-text">"تعامل احترافي من البداية للنهاية، الموقع خرج أفضل مما توقعت وبسرعة تحميل ممتازة."</p>
+          <div class="t-person">
+            <div class="t-avatar">س</div>
+            <div>
+              <strong>سارة الحربي</strong>
+              <span>صاحبة متجر أزياء</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="t-text">"التزام بالمواعيد ودقة في التفاصيل، وأسلوب تواصل واضح طوال فترة المشروع."</p>
+          <div class="t-person">
+            <div class="t-avatar">م</div>
+            <div>
+              <strong>محمد العتيبي</strong>
+              <span>مدير تسويق</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="t-text">"صفحة الهبوط التي صممها رفعت نسبة التسجيل لدينا بشكل ملحوظ خلال أول أسبوعين."</p>
+          <div class="t-person">
+            <div class="t-avatar">ن</div>
+            <div>
+              <strong>نورة القحطاني</strong>
+              <span>مؤسسة شركة ناشئة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-tag">تواصل معي</p>
+        <h2 class="section-title">لنحوّل فكرتك إلى موقع حقيقي</h2>
+        <p class="section-sub">أرسل تفاصيل مشروعك وسأرد عليك خلال 24 ساعة</p>
+
+        <ul class="contact-list">
+          <li>
+             <span class="contact-icon">📧</span>
+            <div><strong>البريد الإلكتروني</strong><a href="mailto:outlke200@gmail.com">outlke200@gmail.com</a></div>
+          </li>
+          <li>
+            <span class="contact-icon">📱</span>
+            <div><strong>واتساب</strong><a href="https://wa.me/966577205172">966 577205172+</a></div>
+          </li>
+          <li>
+            <span class="contact-icon">📍</span>
+            <div><strong>الموقع</strong><span>المدينة المنورة، السعودية</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+          </div>
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">نوع المشروع</label>
+          <select id="service" name="service">
+            <option>موقع تعريفي</option>
+            <option>متجر إلكتروني</option>
+            <option>Landing Page</option>
+            <option>تصميم UI/UX</option>
+            <option>أخرى</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">تفاصيل المشروع</label>
+          <textarea id="message" name="message" rows="5" placeholder="أخبرني عن مشروعك..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#home" class="logo">بــدر الشافعي<span>.</span></a>
+    <p class="footer-tag">مطوّر واجهات أمامية ومصمم UI/UX — أبني مواقع تُحدث فرقًا.</p>
+
+    <div class="footer-social">
+      <a href="#" aria-label="GitHub">GH</a>
+      <a href="#" aria-label="LinkedIn">IN</a>
+      <a href="#" aria-label="Twitter">X</a>
+      <a href="#" aria-label="Instagram">IG</a>
+    </div>
+
+    <p class="footer-copy">© <span id="year"></span>    بــدر الشافعي. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<!-- ============ عناصر عائمة ============ -->
+<a href="https://wa.me/966500000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4z"/></svg>
+</a>
+
+<button id="backToTop" class="back-to-top" aria-label="العودة للأعلى">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
